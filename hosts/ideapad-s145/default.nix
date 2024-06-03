@@ -33,6 +33,9 @@
     LC_TIME = "pt_BR.UTF-8";
   };
 
+  # Timezone
+  time.timeZone = "America/Sao_Paulo";  
+
   # Keymaps
   services.xserver = {
     layout = "br";
