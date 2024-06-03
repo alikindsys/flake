@@ -6,6 +6,9 @@
     enable = true;
     userName = "alikindsys";
     userEmail = "alice@blocovermelho.org";
+    delta = {
+      enable = true;
+    };
     aliases = {
       track = "add";
       untrack = "rm --cached";
