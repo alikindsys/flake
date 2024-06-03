@@ -13,7 +13,7 @@
     wget
     zip
     unzip
-    busybox
+    coreutils
     gnupg
   ];
 
