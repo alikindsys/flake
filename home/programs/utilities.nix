@@ -15,6 +15,7 @@
     unzip
     coreutils
     gnupg
+    bat
   ];
 
   programs.zoxide = {

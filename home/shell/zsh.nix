@@ -11,6 +11,7 @@
         ls = "eza";
         ll = "eza -l";
         rebuild = "sudo nixos-rebuild switch";
+        cat = "bat";
     };
 
     zplug = {
