@@ -42,7 +42,10 @@
     xkbVariant = "";
   };
 
-  console.keyMap = "br-abnt2"; 
+  # SSD TRIM Support
+  services.fstrim.enable = true;
+
+  console.keyMap = "br-abnt2";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
