@@ -4,5 +4,6 @@
   imports = [
     ./git.nix
     ./jetbrains.nix
+    ./languages.nix
   ];
 }
