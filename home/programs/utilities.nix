@@ -16,6 +16,7 @@
     coreutils
     gnupg
     bat
+    mpv
   ];
 
   programs.zoxide = {
