@@ -35,6 +35,9 @@
 
   # Timezone
   time.timeZone = "America/Sao_Paulo";  
+ 
+  # Steam
+  programs.steam.enable = true;
 
   # Keymaps
   services.xserver = {
