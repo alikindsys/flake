@@ -6,5 +6,6 @@
     discord
     spotify
     thunderbird
+    qbittorrent
   ];
 }
