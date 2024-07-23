@@ -4,7 +4,7 @@
   home.packages = with pkgs; [
     firefox    
     discord
-    spotify
+    psst
     thunderbird
     qbittorrent
   ];

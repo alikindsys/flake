@@ -6,8 +6,8 @@
     ./hardware-configuration.nix
 
     # The window manager
-    # Currently: Gnome
-    ../../modules/wm/gnome.nix
+    # Currently: Plasma
+    ../../modules/wm/kde.nix
   ];
 
   # Bootloader
@@ -39,10 +39,21 @@
   # Steam
   programs.steam.enable = true;
 
+  # Wine
+  environment.systemPackages = with pkgs; [
+    wineWowPackages.stable
+  ];
+
   # Keymaps
   services.xserver = {
     layout = "br";
     xkbVariant = "";
+  };
+
+  # Emacs Daemon
+  services.emacs = {
+    enable = true;
+    package = pkgs.emacs-gtk;
   };
 
   # SSD TRIM Support

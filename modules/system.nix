@@ -31,7 +31,7 @@ nix.gc = {
 nixpkgs.config.allowUnfree = true;
 
 # Audio
-sound.enable = true;
+# sound.enable = true;
 hardware.pulseaudio.enable = false;
 security.polkit.enable = true;
 services.pipewire = {

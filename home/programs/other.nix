@@ -2,8 +2,15 @@
 
 {
   home.packages = with pkgs; [
-    wezterm    
+    alacritty
     tmux
     keepassxc
-  ];
+    zathura
+    sublime-merge
+    vscode
+    typst
+    gimp
+    qbittorrent
+    obsidian  
+];
 }
