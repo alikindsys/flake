@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, outputs, ... }:
 
 let username = "alikindsys";
 
@@ -25,6 +25,19 @@ nix.gc = {
   automatic = lib.mkDefault true;
   dates = lib.mkDefault "weekly";
   options = lib.mkDefault "--delete-older-than 7d";
+};
+
+system.autoUpgrade = {
+    enable = true;
+    flake = "/etc/nixos";
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "--no-write-lock-file"
+      "-L" # print build logs
+    ];
+    dates = "02:00";
+    randomizedDelaySec = "45min";
 };
 
 # Allow unfree software

@@ -6,8 +6,9 @@
     ./hardware-configuration.nix
 
     # The window manager
-    # Currently: Plasma
+    # Currently: KDE
     ../../modules/wm/kde.nix
+    # ../../home/programs/niri.nix
   ];
 
   # Bootloader
@@ -54,6 +55,13 @@
   services.emacs = {
     enable = true;
     package = pkgs.emacs-gtk;
+  };
+
+  services.tailscale.enable = true;
+
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
   };
 
   # SSD TRIM Support
