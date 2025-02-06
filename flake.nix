@@ -1,11 +1,11 @@
 {
   description = "Alikind System Machine Flake";
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.05";
-      inputs.nixpkgs.follows = "nixpkgs"; 
+      url = "github:nix-community/home-manager/master";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
@@ -16,6 +16,7 @@
         ./hosts/ideapad-s145
 
         home-manager.nixosModules.home-manager {
+          home-manager.backupFileExtension = "hmbkp";
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = inputs;

@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, outputs, ... }:
 
 let username = "alikindsys";
 
@@ -27,11 +27,24 @@ nix.gc = {
   options = lib.mkDefault "--delete-older-than 7d";
 };
 
+system.autoUpgrade = {
+    enable = true;
+    flake = "/etc/nixos";
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "--no-write-lock-file"
+      "-L" # print build logs
+    ];
+    dates = "02:00";
+    randomizedDelaySec = "45min";
+};
+
 # Allow unfree software
 nixpkgs.config.allowUnfree = true;
 
 # Audio
-sound.enable = true;
+# sound.enable = true;
 hardware.pulseaudio.enable = false;
 security.polkit.enable = true;
 services.pipewire = {
@@ -49,12 +62,15 @@ services.power-profiles-daemon.enable = true;
 fonts = {
   packages = with pkgs; [
     material-design-icons
+    hermit
 
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk-sans
     noto-fonts-emoji
 
-    (nerdfonts.override { fonts = ["JetBrainsMono" "Iosevka" ]; })
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.monaspace
+    nerd-fonts.iosevka
   ];
 };
 
