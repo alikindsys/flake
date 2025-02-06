@@ -2,8 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    prismlauncher    
+    prismlauncher
     bottles
     osu-lazer-bin
+    (pkgs.callPackage ../../pkgs/etterna/package.nix {})
   ];
 }

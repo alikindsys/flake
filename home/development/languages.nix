@@ -1,12 +1,16 @@
 { config, pkgs, ... }:
 
 {
+  imports = [ ./lang/rust.nix ];
+
   home.packages = with pkgs; [
     # Rust
     rustup
-    gcc
+    # gcc
     cargo-bloat
     cargo-deny
     cargo-machete
+    # Java
+    jdk21
   ];
 }

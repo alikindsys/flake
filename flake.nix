@@ -5,7 +5,7 @@
 
     home-manager = {
       url = "github:nix-community/home-manager/master";
-      inputs.nixpkgs.follows = "nixpkgs"; 
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
@@ -16,6 +16,7 @@
         ./hosts/ideapad-s145
 
         home-manager.nixosModules.home-manager {
+          home-manager.backupFileExtension = "hmbkp";
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = inputs;

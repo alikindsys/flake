@@ -18,11 +18,7 @@
         enable = true;
         plugins = [
         {
-          name = "zsh-users/zsh-autosuggestions";
-          tags = [as:plugin];
-        }
-        {
-          name = "zsh-users/zsh-syntax-highlighting";
+          name = "zdharma-continuum/fast-syntax-highlighting";
           tags = [as:plugin];
         }
         {
@@ -44,6 +40,7 @@
         bindkey "^[[1;5C" forward-word
         bindkey "^[[1;5D" backward-word
         eval "$(direnv hook zsh)"
+        zmodload zsh/zprof
       '';
   };
 }

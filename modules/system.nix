@@ -62,12 +62,15 @@ services.power-profiles-daemon.enable = true;
 fonts = {
   packages = with pkgs; [
     material-design-icons
+    hermit
 
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk-sans
     noto-fonts-emoji
 
-    (nerdfonts.override { fonts = ["JetBrainsMono" "Iosevka" ]; })
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.monaspace
+    nerd-fonts.iosevka
   ];
 };
 

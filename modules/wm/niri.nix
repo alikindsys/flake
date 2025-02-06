@@ -1,26 +1,20 @@
 { config, pkgs, ... }:
 
 {
-  services.xserver = {
-    enable = true;
-    displayManager.gdm.enable = true;
-  };
-
-  
   # Notification Manager
-  # programs.mako.enable = true;
+  programs.mako.enable = true;
  
-  # programs.waybar = { 
-  #  enable = true;
-  #  settings = {
-  #    mainbar.layer = "top";
-  #    systemd.enable = true;
-  #  };
-  # };
+  programs.waybar = { 
+   enable = true;
+   settings = {
+     mainbar.layer = "top";
+     systemd.enable = true;
+   };
+  };
  
   # App Launcher
-  # programs.fuzzel.enable = true;
+  programs.fuzzel.enable = true;
 
   # Niri
-  # programs.niri.enable = true;
+  programs.niri.enable = true;
 }

@@ -17,6 +17,8 @@
     gnupg
     bat
     mpv
+    piper
+    screenkey
   ];
 
   programs.zoxide = {
