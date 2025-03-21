@@ -66,12 +66,10 @@ fonts = {
 
     noto-fonts
     noto-fonts-cjk-sans
-    noto-fonts-emoji
-
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.monaspace
-    nerd-fonts.iosevka
-  ];
+    noto-fonts-emoji  
+    
+    recursive 
+  ] ++ ( with pkgs.nerd-fonts; [ jetbrains-mono monaspace iosevka recursive-mono] );
 };
 
 environment.systemPackages = with pkgs; [

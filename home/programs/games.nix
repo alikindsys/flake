@@ -5,6 +5,8 @@
     prismlauncher
     bottles
     osu-lazer-bin
-    (pkgs.callPackage ../../pkgs/etterna/package.nix {})
+    # (pkgs.callPackage ../../pkgs/etterna/package.nix {})
+    etterna 
+    mangohud
   ];
 }

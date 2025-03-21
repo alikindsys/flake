@@ -5,7 +5,7 @@
     alacritty
     tmux
     keepassxc
-#    zathura
+    zathura
     sublime-merge
     vscode
     typst
@@ -17,7 +17,9 @@
     aegisub
 #    obs-studio
     nss
-    anvil-editor
+#    anvil-editor
     zed-editor
+    quodlibet
+    nicotine-plus
 ];
 }
