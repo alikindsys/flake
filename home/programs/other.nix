@@ -2,24 +2,25 @@
 
 {
   home.packages = with pkgs; [
-    alacritty
+    ghostty
     tmux
     keepassxc
     zathura
     sublime-merge
     vscode
-    typst
+#    typst
     gimp
     qbittorrent
-    obsidian  
+#    obsidian  
     libreoffice
     easyeffects
-    aegisub
+#    aegisub
 #    obs-studio
     nss
 #    anvil-editor
-    zed-editor
-    quodlibet
+#    zed-editor
+    nh
+    quodlibet-full
     nicotine-plus
 ];
 }

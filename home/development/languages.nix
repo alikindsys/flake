@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./lang/rust.nix ];
+  imports = [ ./lang/rust.nix ./lang/typst.nix ];
 
   home.packages = with pkgs; [
     # Rust

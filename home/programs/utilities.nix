@@ -19,6 +19,7 @@
     mpv
     piper
     screenkey
+    kdePackages.qtstyleplugin-kvantum
   ];
 
   programs.zoxide = {

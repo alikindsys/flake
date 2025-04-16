@@ -8,7 +8,7 @@ in {
 users.users.alikindsys = {
   isNormalUser = true;
   description = "Alice Isabel";
-  extraGroups = [ "networkmanager" "wheel" ];
+  extraGroups = [ "networkmanager" "wheel" "docker" ];
   shell = pkgs.zsh;
 };
 
@@ -45,7 +45,7 @@ nixpkgs.config.allowUnfree = true;
 
 # Audio
 # sound.enable = true;
-hardware.pulseaudio.enable = false;
+# hardware.pulseaudio.enable = false;
 security.polkit.enable = true;
 services.pipewire = {
   enable = true;
@@ -56,6 +56,12 @@ services.pipewire = {
   pulse.enable = true;
   jack.enable = true;
 };
+
+# Docking
+virtualisation.docker.enable = true;
+
+# Latest Linux Kernel
+boot.kernelPackages = pkgs.linuxPackages_latest;
 
 services.power-profiles-daemon.enable = true;
 
@@ -69,6 +75,7 @@ fonts = {
     noto-fonts-emoji  
     
     recursive 
+    ocr-a
   ] ++ ( with pkgs.nerd-fonts; [ jetbrains-mono monaspace iosevka recursive-mono] );
 };
 
