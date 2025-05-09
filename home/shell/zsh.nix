@@ -41,6 +41,7 @@
         bindkey "^[[1;5D" backward-word
         eval "$(direnv hook zsh)"
         zmodload zsh/zprof
+        source <(jj util completion zsh)
       '';
   };
 }
