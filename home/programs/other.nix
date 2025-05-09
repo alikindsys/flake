@@ -20,6 +20,7 @@
 #    anvil-editor
 #    zed-editor
     nh
+    nixfmt-rfc-style
     quodlibet-full
     nicotine-plus
 ];
