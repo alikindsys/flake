@@ -13,6 +13,7 @@
         conflict-marker-style = "git";
         pager = "delta";
         editor = "nano";
+        default-command = ["log"];
       };
       signing = {
         behaviour = "own";
