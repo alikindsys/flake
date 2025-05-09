@@ -21,14 +21,14 @@
           name = "zdharma-continuum/fast-syntax-highlighting";
           tags = [as:plugin];
         }
-        {
-          name = "zsh-users/zsh-history-substring-search";
-          tags = [as:plugin];
-        }
-        {
-          name = "heapbytes/heapbytes-zsh";
-          tags = [as:theme depth:1];
-        }
+#        {
+#          name = "zsh-users/zsh-history-substring-search";
+#          tags = [as:plugin];
+#        }
+#        {
+#          name = "heapbytes/heapbytes-zsh";
+#          tags = [as:theme depth:1];
+#        }
         {
           name = "chisui/zsh-nix-shell";
           tags = [as:plugin];
