@@ -30,6 +30,10 @@
 #          tags = [as:theme depth:1];
 #        }
         {
+          name = "Aloxaf/fzf-tab";
+          tags = [as:plugin];
+        }
+        {
           name = "chisui/zsh-nix-shell";
           tags = [as:plugin];
         }
