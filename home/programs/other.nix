@@ -24,4 +24,5 @@
     quodlibet-full
     nicotine-plus
 ];
+  fonts.fontconfig.enable = true;
 }
