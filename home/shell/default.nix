@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./zsh.nix ./starlight.nix ];
+  imports = [ ./fish.nix ./zsh.nix ./starlight.nix ];
 }
