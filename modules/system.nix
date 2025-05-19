@@ -76,7 +76,7 @@ fonts = {
     
     recursive 
     ocr-a
-  ] ++ ( with pkgs.nerd-fonts; [ jetbrains-mono monaspace iosevka recursive-mono] );
+  ] ++ ( with pkgs.nerd-fonts; [ jetbrains-mono monaspace iosevka recursive-mono space-mono] );
 };
 
 environment.systemPackages = with pkgs; [
