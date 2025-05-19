@@ -9,7 +9,7 @@
     sublime-merge
     vscode
 #    typst
-    gimp
+    gimp3-with-plugins
     qbittorrent
 #    obsidian  
     libreoffice
