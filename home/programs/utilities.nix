@@ -14,6 +14,9 @@
     zip
     unzip
     coreutils
+    xh
+    fd
+    fselect
     gnupg
     bat
     mpv
