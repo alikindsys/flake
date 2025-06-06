@@ -9,7 +9,7 @@
         email = "alice@blocovermelho.org"; 
       };
       ui = {
-        diff.format = "git";
+        diff-formatter = ":git";
         conflict-marker-style = "git";
         pager = "delta";
         editor = "nano";
