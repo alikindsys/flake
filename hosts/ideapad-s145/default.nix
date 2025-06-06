@@ -9,6 +9,7 @@
     # Currently: KDE
     ../../modules/wm/kde.nix
     # ../../home/programs/niri.nix
+    ../../modules/navidrome.nix
   ];
 
   # On this house we use sddm

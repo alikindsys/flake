@@ -8,6 +8,7 @@ in {
 users.users.alikindsys = {
   isNormalUser = true;
   description = "Alice Isabel";
+  extraGroups = [ "networkmanager" "wheel" "docker" "navidrome" ];
   shell = pkgs.fish;
 };
 
