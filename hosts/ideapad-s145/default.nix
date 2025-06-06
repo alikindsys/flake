@@ -6,9 +6,9 @@
     ./hardware-configuration.nix
 
     # The window manager
-    # Currently: KDE
+    # Currently: KDE, Sway
     ../../modules/wm/kde.nix
-    # ../../home/programs/niri.nix
+    ../../modules/wm/sway.nix
     ../../modules/navidrome.nix
   ];
 

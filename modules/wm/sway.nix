@@ -1,17 +1,21 @@
 { config, pkgs, ... }:
 
 {
-  # Notification Manager
-  programs.mako.enable = true;
- 
-  # App Launcher
-  programs.fuzzel.enable = true;
+  environment.systemPackages = with pkgs; [
+    mako
+    grim
+    slurp
+    wl-clipboard
+    wofi
+    waybar
+    networkmanagerapplet
+  ];
  
   services.gnome.gnome-keyring.enable = true;
 
-  # Niri
+  # Sway
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true;  
-  }; 
+  };
 }
