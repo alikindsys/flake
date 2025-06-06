@@ -6,11 +6,11 @@
       settings = {
         add_newline = true;
         format = ''
-           $username[@](bg:#F5A9B8 fg:#333333)$hostname | ($nix_shell )$directory 
+           $username[ @ ](bg:#F5A9B8 fg:#333333)$hostname | ($nix_shell )$directory 
           ( $git_commit $git_branch ($git_state )($git_status )$git_metrics
           )❯ '';
         username = {
-          format = "[$user]($style)";
+          format = "[$user ]($style)";
           style_user = "bg:#5BCEFA fg:#333333";
           style_root = "bg:#C9510C fg:#FAFAFA";
           show_always = true;
@@ -25,7 +25,7 @@
           truncation_symbol = "<many>/";
         };
         hostname = {
-          format = "[$ssh_symbol $hostname]($style)";
+          format = "[$ssh_symbol $hostname ]($style)";
           style = "bg:#FFFFFF fg:#333333";
           ssh_only = false;
           ssh_symbol = "";
